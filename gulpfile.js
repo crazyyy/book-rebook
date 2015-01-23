@@ -168,14 +168,11 @@ gulp.task('watch', ['sprite', 'css', 'prefixr', 'scripts'], function(){
 });
 */
 
-
 gulp.task('watch', ['css'], function(){
     gulp.watch(appFiles.styles, ['css']).on('change', function(evt) {
         changeEvent(evt);
     });
 });
-
-
 
 gulp.task('default', ['css', 'prefixr', 'scripts', 'image', 'clearcache']);
 
