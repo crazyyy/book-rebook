@@ -31,8 +31,6 @@ var spriteConfig = {
 };
 var     gulp        =       require('gulp'),
         gutil       =       require('gulp-util'),
-        pngquant    =       require('imagemin-pngquant'),
-        advpng    =       require('imagemin-advpng'),
         es          =       require('event-stream'), /* ALARM */
         
 //         /* ALARM */
@@ -65,7 +63,7 @@ gulp.task('css', function () {
             new gutil.PluginError('CSS', err, {showStack: true}),
             gutil.beep();
         })
-        .pipe(plugins.size())
+        .pipe(plugins.size({showFiles:true}))
         .pipe(plugins.sourcemaps.write('/maps/'))
         .pipe(gulp.dest(paths.styles.dest));
 });
@@ -83,7 +81,7 @@ gulp.task('style', function () {
         errLogToConsole:    true,
         outputStyle:        sassStyle
     }))
-    .pipe(plugins.size())
+    .pipe(plugins.size({showFiles:true}))
     .pipe(gulp.dest(paths.styles.dest));
 });
 
@@ -93,7 +91,7 @@ gulp.task('scripts', function(){
         .pipe(plugins.concat('app.js'))
         .pipe(gulp.dest(paths.scripts.dest))
         .pipe(isProduction ? plugins.uglify() : gutil.noop())
-        .pipe(plugins.size())
+        .pipe(plugins.size({showFiles:true}))
         .pipe(gulp.dest(paths.scripts.dest));
 });
 
@@ -107,22 +105,16 @@ gulp.task('image', function() {
             })
         ))
         .pipe(gulp.dest(paths.images.dest))
-        .pipe(plugins.size());
+        .pipe(plugins.size({showFiles:true}));
 });
 
 gulp.task('webp', function () {
     return gulp.src(paths.images.src)
         .pipe(plugins.webp())
         .pipe(gulp.dest(paths.images.dest+'webp/'))
-        .pipe(plugins.size());
+        .pipe(plugins.size({showFiles:true}));
 });
 
-/*
-    Sprite Generator
-*/
-
-/*
--------
 gulp.task('sprite', function () {
     var spriteData = gulp.src(paths.sprite.src).pipe(plugins.spritesmith({
         imgName: spriteConfig.imgName,
@@ -132,44 +124,40 @@ gulp.task('sprite', function () {
             sprite.name = 'sprite-' + sprite.name;
         }
     }));
-    spriteData.img.pipe(gulp.dest(paths.images.dest));
+    spriteData.img
+        .pipe(plugins.size({showFiles:true}))
+        .pipe(plugins.cache(
+            plugins.imageOptimization({ 
+                optimizationLevel: 3, 
+                progressive: true, 
+                interlaced: true 
+            })
+        ))
+        .pipe(gulp.dest(paths.images.dest))
+        .pipe(plugins.size({showFiles:true}))
+        .pipe(plugins.webp())
+        .pipe(gulp.dest(paths.images.dest+'webp/'))
+        .pipe(plugins.size({showFiles:true}));
     spriteData.css.pipe(gulp.dest(paths.styles.src));
 });
 
-/*
-    Clear cache
-*/
-/*
------------
 gulp.task('clearcache', function () {
     return gulp.src(basePaths.cache, {read: false})
-        .pipe(wait(500))
+        .pipe(plugins.wait(500))
         .pipe(plugins.rimraf());
 });
-*/
 
-/*
-
-gulp.task('watch', ['sprite', 'css', 'prefixr', 'scripts'], function(){
-    gulp.watch(appFiles.styles, ['css', 'prefixr', 'image', 'clearcache']).on('change', function(evt) {
+gulp.task('watch', ['sprite', 'clearcache', 'css', 'style', 'scripts', 'image', 'webp'], function(){
+    gulp.watch(appFiles.styles, ['css', 'style', 'clearcache']).on('change', function(evt) {
         changeEvent(evt);
     });
-    gulp.watch(basePaths.cache, ['clearcache']).on('change', function(evt) {
+    gulp.watch(paths.scripts.src + '*.js', ['scripts', 'clearcache']).on('change', function(evt) {
         changeEvent(evt);
     });
-    gulp.watch(paths.scripts.src + '*.js', ['scripts']).on('change', function(evt) {
+    gulp.watch(paths.sprite.src, ['sprite', 'css', 'style', 'clearcache']).on('change', function(evt) {
         changeEvent(evt);
     });
-/*    gulp.watch(paths.images.src, ['image']).on('change', function(evt) {
-        changeEvent(evt);
-    });
-*/
-/* ---
-});
-*/
-
-gulp.task('watch', ['css'], function(){
-    gulp.watch(appFiles.styles, ['css']).on('change', function(evt) {
+    gulp.watch(paths.images.src, ['image', 'webp', 'clearcache']).on('change', function(evt) {
         changeEvent(evt);
     });
 });
