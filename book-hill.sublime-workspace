@@ -1,0 +1,881 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"ff",
+				"ff-a	font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;"
+			],
+			[
+				"la",
+				"last-child  (pseudo-class)"
+			],
+			[
+				"border",
+				"border-image: "
+			],
+			[
+				"bord",
+				"border-image:   (property)"
+			],
+			[
+				"n",
+				"nth-child(  (pseudo-class)"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"firs",
+				"first-child"
+			],
+			[
+				"trs",
+				"trs	transition: ${1:prop} ${2:time};"
+			],
+			[
+				"imp",
+				"@import	@import url(${0});"
+			],
+			[
+				"li",
+				"lighten(color, 10%)"
+			],
+			[
+				"article-",
+				"article-title"
+			],
+			[
+				"d",
+				"disc"
+			],
+			[
+				"list-style-",
+				"list-style-position"
+			],
+			[
+				"liststyle",
+				"list-style-type"
+			],
+			[
+				"box-z",
+				"-moz-box-sizing:   (property)"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"fff",
+				"F0F0F0"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"op",
+				"op:ms	-ms-filter:opacity"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"lis",
+				"list	list-style-type"
+			],
+			[
+				"bor",
+				"border-left"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"scss",
+				"SassBeautify: Convert from CSS to current type"
+			],
+			[
+				"emm",
+				"Emmet: Encode\\Decode Image to data:URL"
+			],
+			[
+				"cssc",
+				"Run CSScomb"
+			],
+			[
+				"sass",
+				"SassBeautify: Convert from CSS to current type"
+			],
+			[
+				"cssb",
+				"Run CSScomb"
+			],
+			[
+				"csssc",
+				"Tidy CSS (Highest Compression)"
+			],
+			[
+				"sas",
+				"SassBeautify"
+			],
+			[
+				"css",
+				"Tidy CSS (Low Compression)"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"emmet",
+				"Emmet: Encode\\Decode Image to data:URL"
+			],
+			[
+				"emme",
+				"Emmet: Encode\\Decode Image to data:URL"
+			],
+			[
+				"emmet enc",
+				"Emmet: Encode\\Decode Image to data:URL"
+			],
+			[
+				"emmet en",
+				"Emmet: Encode\\Decode Image to data:URL"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"au",
+				"Autoprefix CSS"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"tor",
+				"TortoiseSVN: Commit"
+			],
+			[
+				"tid",
+				"Tidy HTML"
+			],
+			[
+				"tidy",
+				"Tidy CSS"
+			],
+			[
+				"ti",
+				"Tidy HTML"
+			],
+			[
+				"wo",
+				"WordPress: Open Config File"
+			],
+			[
+				"auto",
+				"Autoprefix CSS"
+			],
+			[
+				"html",
+				"Tidy HTML"
+			],
+			[
+				"snip de",
+				"Snippet: desktop  laptop"
+			],
+			[
+				"sni mo",
+				"Snippet: smartphone"
+			],
+			[
+				"snipe",
+				"Snippet: :focus"
+			],
+			[
+				"snip",
+				"Snippet: ipad"
+			],
+			[
+				"clea",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"ty",
+				"Tidy HTML"
+			],
+			[
+				"bro",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sft",
+				"SFTP: Setup Server…"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"sftp",
+				"SFTP: Setup Server…"
+			],
+			[
+				"live",
+				"LiveStyle: Apply Patch"
+			],
+			[
+				"remoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"qui",
+				"Git: Quick Commit"
+			],
+			[
+				"qu",
+				"Git: Quick Commit"
+			],
+			[
+				"qi",
+				"Git: Quick Commit"
+			],
+			[
+				"aut",
+				"Autoprefix CSS"
+			],
+			[
+				"git ",
+				"Git: Push"
+			],
+			[
+				"git qu",
+				"Git: Quick Commit"
+			],
+			[
+				"git q",
+				"Git: Quick Commit"
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git",
+				"Git: Push"
+			],
+			[
+				"gut",
+				"Git: Quick Commit"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"gi",
+				"Git: Push"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"subl",
+				"SublimeZilla: Import FileZilla Server"
+			],
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"a",
+				"Autoprefix CSS"
+			],
+			[
+				"colo",
+				"BracketHighlighter: Toggle Global Enable"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 199.0,
+		"history":
+		[
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"restart",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/OpenServer/domains/book-hill.ru"
+	],
+	"file_history":
+	[
+		"/C/OpenServer/domains/book-hill.ru/api-card.scss",
+		"/Z/hotels24.ua/assets/sass/developer.css",
+		"/Z/api-card-fork/app/ServicesDefault.php",
+		"/Z/api-card-fork/app/Services.php",
+		"/Z/api-card-fork/app/templates/v1/Card/form.phtml.orig",
+		"/Z/hotels24.ua/gulpfile.js",
+		"/Z/api-card-fork/app/Controllers/v1/Card/IndexController.php",
+		"//10.1.110.15/Work/hotels24.ua/sorce_scss/css_from_region.scss",
+		"//10.1.110.15/Work/hotels24.ua/sorce_scss/css_booking_self_confirmed.scss",
+		"//10.1.110.15/Work/hotels24.ua/www/css/sass24/all.css",
+		"//10.1.110.15/Work/hotels24.ua/sorce_scss/index.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/second.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/plug-in/menu.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/plug-in/tabel_ul.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/import.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/base-style/css-ie.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/import_ie.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/ie/ie.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/clientreview/clientreviewform.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/main_rating/main_rating.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/earlier_looked/earlier_looked.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/static_page/static_page.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/main/main_page_styles.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/main_catalog/main_catalog.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/all_cities/all_cities.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/menu_horiz_dropdown/menu_horiz_dropdown.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/menu_horiz_dropdown/menu_horiz_dropdown.sсss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/all_cities/all_cities.sсss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/signature/signature.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/signature/signature.sсss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/booking/booking_new.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/redesign/redesign.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/rental/rental.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/booking/booking.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/customers/customers.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/all.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/.temp/src24/sass24/temp.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/all.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/tooltip/tooltip.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/review/review.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/button/button_light.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/button/button_import.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/button/button.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/button/button_small.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/button/button_orange.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/.temp/src24/sass24/button/button_grey.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/button/button_green.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/button/button_navy.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/button/button_navy.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/button/button_blue.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/button/button_blue.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/hotel_catalog/hotel_catalog.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/layout/layout.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/www/css2/import.css",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/import.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/sass24/reset/reset.scss",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/package.json",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/config.rb",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/sorce_scss/index.scss",
+		"/D/Dyandex/work/ria/verstka/designs/lp-rock-hotel-abouttour/dev/gulpfile.js",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/clientreview/clientreviewform.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/earlier_looked/earlier_looked.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/main/main_page_styles.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/main_catalog/main_catalog.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/main/main_rating/main_rating.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/button/button_small.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/layout/layout.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/button/button_orange.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/button/button.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/review/review.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/customers/customers.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/booking/booking.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/redesign/redesign.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/menu-horiz_dropdown/menu-horiz_dropdown.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/button/button_light.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/button/button_green.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/button/button_navy.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/button/button_blue.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/button/button_grey.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/src24/sass24/rental/rental.sass",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/application/templates/ria/index-flat.tpl",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/application/templates/ria_region/index-url.tpl",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/application/templates/ria_region/index-right_seach.tpl",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/application/templates/ria_coob/index-right_seach.tpl",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/application/templates/ria_mobile/index-right_seach.tpl",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/application/templates/ria/index-url.tpl",
+		"/D/Dyandex/work/ria/vagrant/web/hotels24.ua/config3.rb",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/hotels/oneHotelInHalfPriceList.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/hotels/list.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/hotels/oneHotelInList.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/hotels/viewed.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/css/main.css",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/hotels/room.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/hotels/rooms.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/layouts/main-bez-footer.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/site/menu.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/hotels/halfprice.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/site/contacts.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/layouts/main.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/headers/site-contacts.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/hotels/map.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/hotels/reviews.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/hotels/info.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/common/menuHotel.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/common/fromTo.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/gulpfile.js",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/search/index.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/search/oneResult.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/helpers/SearchResultView.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/scss/form.sass",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/scss/ie.sass",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/scss/main.sass",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/scss/print.sass",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/scss/screen.sass",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/scss/main.scss",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/scss/form.scss",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/scss/ie.scss",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/scss/print.scss",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/scss/screen.scss",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/sass/main.sass",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/site/index.php",
+		"/D/Dropbox/Soft/SublimeText2/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/css/ie.css",
+		"/D/Dropbox/Soft/SublimeText2/Data/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/D/Dropbox/Soft/SublimeText2/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/index.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/protected/views/headers/booking-index.php",
+		"/D/Dyandex/work/ria/vagrant/www/hotels_mobile/site/sftp-config.json"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"layout-wrapper-middle",
+			"ul",
+			"cardNumber",
+			".card-main",
+			"ul",
+			"acrd-descr",
+			"5em",
+			"card-body",
+			"-bod",
+			"acrd-descr",
+			"form",
+			"font-family: Arial,Helvetica,sans-serif;",
+			"background: #fafafa;",
+			"font:",
+			"font-family: Arial;",
+			"font:",
+			"background: #fafafa;",
+			"currentColor",
+			"background: #2793e3;",
+			"font:",
+			"font",
+			"font{",
+			"font ",
+			"font-family: Arial, serif;",
+			"arial",
+			"font",
+			"//",
+			"background: #fff;",
+			"background: #f5af41;",
+			"sass",
+			"url(/",
+			"/form",
+			"form",
+			"class=\"search-form_catalog_page click_form_button\"",
+			"form_catalog_page",
+			"layout-middle_sidebar_right",
+			"<p>111 ",
+			"header",
+			"conta",
+			"...",
+			"star",
+			"rating",
+			"star",
+			".select-filtr-skidka",
+			".select-filtr-skidka select",
+			"menu",
+			"hotel_info_page_top",
+			"rooms_list",
+			"hotel_list",
+			"main_wrapper ",
+			"menu_hotel",
+			"active",
+			"star",
+			"header_hotel",
+			"main_wrapper",
+			"floatL",
+			"city_wrapper",
+			"search_wrapper",
+			"one_resul_search",
+			"search_wrapper",
+			"tab",
+			".form_wrapper ul li:first-child label",
+			"ctrl+e",
+			"expand",
+			"\"tab\"",
+			"emmet",
+			"main_search",
+			"main_wrapper",
+			"new-select-style-wpandyou",
+			"search_arrive",
+			"day_arr",
+			"padT10",
+			"form_wrapper ",
+			"clear",
+			"copyright",
+			"footer",
+			"collapsed",
+			"menu_header",
+			"icon-bar",
+			"tel_header",
+			"table",
+			"header ",
+			"header",
+			"58585a",
+			"font-fa",
+			"header",
+			"v-aM",
+			"header ",
+			"dispIB",
+			"logo_mini",
+			"logo",
+			"+",
+			"tra",
+			"(",
+			"+",
+			"single-thumb",
+			".single-title",
+			"img",
+			"22",
+			".single-title img",
+			"single-title",
+			".single-thumb",
+			"body.category",
+			"body.category article",
+			"295",
+			"single-thumb",
+			"article",
+			"category",
+			"article",
+			".cat-title",
+			"slide",
+			"src=\"img",
+			"asid",
+			"135",
+			"3b3b",
+			"color",
+			"transition",
+			"trans",
+			"imgmodel",
+			"*",
+			".widget_text",
+			"menu",
+			".contact-bar textarea",
+			", .contact-bar textarea",
+			".widget_tex",
+			".widget_text",
+			".widget_text, .advanced_text",
+			"widg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;",
+			"background-color: #fafafa;",
+			"font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;",
+			"background-color: #fafafa;",
+			"background-color: #2793e3;",
+			"font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;",
+			"background-color: #fff;",
+			"background-color: #f5af41;",
+			"scss",
+			"url(../",
+			"<p>",
+			"img/slider.jpg",
+			"290",
+			"src=\"<?php echo get_template_directory_uri(); ?>/img",
+			"295",
+			"img/model",
+			"//",
+			"href=\"#\"",
+			"68",
+			" .tab-header li",
+			"72",
+			"<?php echo get_template_directory_uri(); ?>/",
+			"src=\"<?php echo get_template_directory_uri(); ?>/img",
+			"font-family: 'PT Sans', sans-serif;",
+			"href=\"#\"",
+			"100",
+			"950",
+			"fonts",
+			"img",
+			"src=\"<?php echo get_template_directory_uri(); ?>/img",
+			"img",
+			"src=\"<?php echo get_template_directory_uri(); ?>/img",
+			"src=\"phpshop/templates/saitobaza/img",
+			"carousell-inner",
+			"carousell-item",
+			"120",
+			"1200",
+			"rgba(253, 238, 186, 0.25)",
+			"#FDEEBA",
+			"</a>",
+			"<a href=\"\">\\1<aasa>",
+			"<a href=\"\">/1<a\\/>",
+			").png",
+			")png",
+			"png\" ",
+			"timthumb",
+			" ",
+			"h3",
+			"../img/",
+			"src=\"<?php echo get_template_directory_uri(); ?>/img",
+			"src=\"img",
+			"img/",
+			"font-family: 'Open Sans', sans-serif;",
+			"src=\"<?php echo get_template_directory_uri(); ?>/img",
+			"src=\"<?php echo get_template_directory_uri(); ?>/photos",
+			"current-menu-item",
+			"",
+			"img",
+			"70",
+			"1000",
+			"<li>",
+			"showposts=12",
+			"page-template-page-jobs-php",
+			"http://mihas86.myjino.ru/wp-content/themes/wp-onetoone/img/",
+			"http://mihas86.myjino.ru/",
+			"140",
+			"1000",
+			"src=\"<?php echo get_template_directory_uri(); ?>/img/",
+			"url('../img",
+			"url('img/",
+			"href=\"#\"",
+			"src=\"img",
+			"img",
+			"relative",
+			"  behavior: url(http://demo.saitobaza.ru/wp-content/themes/wp-clickprime/PIE/PIE.htc);",
+			"section",
+			"/PIE.htc",
+			"http://demo.saitobaza.ru/wp-content/themes/wp-clickprime/PIE.htc",
+			".section-main",
+			"400",
+			"515",
+			"115",
+			"175",
+			"href=\"#\"",
+			"320",
+			"<span class=\"article-info\"><span class=\"date\">10:26  23.02.2014</span>  Интервью  Богдан Тимин</span>",
+			"<h2><a href=\"\">Что случилось с Михаилом Рокфеллером</a></h2>",
+			"180",
+			"1000",
+			"253",
+			"MyriadProBoldCondensed",
+			"1000",
+			"",
+			"wpeasy",
+			"c"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 45.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 150.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 183.0
+	},
+	"output.sftp":
+	{
+		"height": 149.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 172.0
+	},
+	"project": "book-hill.sublime-project",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Z:\\hotels24.ua\\hotels24ua.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

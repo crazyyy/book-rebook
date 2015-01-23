@@ -1,13 +1,12 @@
 var basePaths = {
     src: 'assets/',
     dest: './',
-    bower: 'bower_components/',
     cache: 'application/templates_c/*.php'
 };
 var paths = {
     images: {
-        src: basePaths.src + 'img/**',
-        dest: basePaths.dest + 'img/'
+        src: basePaths.src + 'images/**',
+        dest: basePaths.dest + 'images/'
     },
     scripts: {
         src: basePaths.src + 'js/',
@@ -25,36 +24,29 @@ var appFiles = {
     styles: paths.styles.src + '*.scss',
     scripts: [paths.scripts.src + '*.js']
 };
-var vendorFiles = {
-    styles: '',
-    scripts: ''
-};
 var spriteConfig = {
     imgName: 'sprite.png',
     cssName: '_sprite.scss',
     imgPath: paths.images.dest + 'sprite.png' // Gets put in the css
 };
-/*
-    Let the magic begin
-*/
 var     gulp        =       require('gulp'),
-        es          =       require('event-stream'), /* ALARM */
         gutil       =       require('gulp-util'),
-//        pngquant    =       require('imagemin-pngquant'), /* ALARM */
+        pngquant    =       require('imagemin-pngquant'),
+        advpng    =       require('imagemin-advpng'),
+        es          =       require('event-stream'), /* ALARM */
+        
+//         /* ALARM */
 //        wait        =       require('gulp-wait'), /* ALARM */ 
         plugins     =       require("gulp-load-plugins")({
                                 pattern: ['gulp-*', 'gulp.*'],
                                 replaceString: /\bgulp[\-.]/
                             });
 
-
 var isProduction    = true,
     sassStyle       = 'compressed';
 
-
 if (gutil.env.dev === true) {
-    sassStyle       =   'nested'
-
+    sassStyle       =   'nested',
     isProduction    =   false;
 }
 
@@ -70,114 +62,67 @@ gulp.task('css', function () {
             outputStyle:        sassStyle
         }))
         .on('error', function(err){
-            new gutil.PluginError('CSS', err, {showStack: true});
+            new gutil.PluginError('CSS', err, {showStack: true}),
+            gutil.beep();
         })
-        .pipe(plugins.autoprefixer({
-            browsers: ['> 1%', 'last 4 versions', 'safari 5', 'ie 8', 'Firefox >= 20', 'Opera 12.1'],
-            cascade: false
-        }))
-        .pipe(isProduction ? plugins.combineMediaQueries({
-            log: true
-        }) : gutil.noop())
         .pipe(plugins.size())
         .pipe(plugins.sourcemaps.write('/maps/'))
         .pipe(gulp.dest(paths.styles.dest));
 });
 
-
-
-/*
-
-gulp.task('css', function(){
-
-    var sassFiles = gulp.src(appFiles.styles)
-
-    
-    .on('error', function(err){
-        new gutil.PluginError('CSS', err, {showStack: true});
-    });
-
-    return es.concat(gulp.src(vendorFiles.styles), sassFiles)
-      pipe(plugins.concat('style.min.css')) 
-        .pipe(plugins.autoprefixer('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-        
-        .pipe(isProduction ? plugins.combineMediaQueries({
-            log: true
-        }) : gutil.noop())
-
-       .pipe(isProduction ? plugins.cssmin() : gutil.noop())
-
-
-        .pipe(plugins.size())
-        .pipe(gulp.dest(paths.styles.dest))
- /*       .pipe(plugins.browsersync.reload({stream:true, once:true}))  */
-  /*      .pipe(plugins.notify("css complete."));
-});
-
-*/
-
-/*
-gulp.task('css', function () {
-    return gulp.src(appFiles.styles)
-        .pipe(plugins.rubySass({style: sassStyle, sourcemap: false}))
-        .pipe(plugins.autoprefixer('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-        .on('error', function (err) { new gutil.PluginError('CSS', err, {showStack: true}); })
-        .pipe(plugins.minifyCss({keepBreaks:true,compatibility:'ie7'}))
-        .pipe(gulp.dest(paths.styles.dest))
-        .pipe(plugins.size())
-        .pipe(plugins.notify("css complete."));
-});
-
-*/
-
-
-
-gulp.task('prefixr', function () {
-    return gulp.src(paths.styles.dest+'/*.css')
-        .pipe(plugins.autoprefixer('> 2%', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-        .pipe(plugins.minifyCss({keepBreaks:false,compatibility:'ie7'}))
-        .pipe(gulp.dest(paths.styles.dest))
-        .pipe(plugins.size());
+gulp.task('style', function () {
+    var cssFiles = gulp.src(paths.styles.dest+'*.css')
+    .pipe(plugins.autoprefixer({
+        browsers: ['> 1%', 'last 4 versions', 'safari 5', 'ie 8', 'Firefox >= 20', 'Opera 12.1'],
+        cascade: false
+    }))
+    .pipe(plugins.combineMediaQueries({
+        log: true
+    }))
+    .pipe(plugins.sass({
+        errLogToConsole:    true,
+        outputStyle:        sassStyle
+    }))
+    .pipe(plugins.size())
+    .pipe(gulp.dest(paths.styles.dest));
 });
 
 
 gulp.task('scripts', function(){
-
-    gulp.src(vendorFiles.scripts.concat(appFiles.scripts))
+    gulp.src(appFiles.scripts)
         .pipe(plugins.concat('app.js'))
         .pipe(gulp.dest(paths.scripts.dest))
         .pipe(isProduction ? plugins.uglify() : gutil.noop())
         .pipe(plugins.size())
-        .pipe(gulp.dest(paths.scripts.dest))
-        .pipe(plugins.notify("JS complete."));
-
+        .pipe(gulp.dest(paths.scripts.dest));
 });
 
-/*
-gulp.task('image', function () {
+gulp.task('image', function() {
     return gulp.src(paths.images.src)
         .pipe(plugins.cache(
-            plugins.imageOptimization({ optimizationLevel: 3, progressive: true, interlaced: true }) 
+            plugins.imageOptimization({ 
+                optimizationLevel: 3, 
+                progressive: true, 
+                interlaced: true 
+            })
         ))
         .pipe(gulp.dest(paths.images.dest))
-        .pipe(reload({stream:true, once:true})) 
-        .pipe(plugins.size()); 
+        .pipe(plugins.size());
 });
-*/
 
-gulp.task('image', function () {
+gulp.task('webp', function () {
     return gulp.src(paths.images.src)
-        .pipe(plugins.imageOptimization({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
-        }))
-        .pipe(gulp.dest(paths.images.dest));
+        .pipe(plugins.webp())
+        .pipe(gulp.dest(paths.images.dest+'webp/'))
+        .pipe(plugins.size());
 });
 
 /*
     Sprite Generator
 */
+
+/*
+-------
 gulp.task('sprite', function () {
     var spriteData = gulp.src(paths.sprite.src).pipe(plugins.spritesmith({
         imgName: spriteConfig.imgName,
@@ -194,11 +139,16 @@ gulp.task('sprite', function () {
 /*
     Clear cache
 */
+/*
+-----------
 gulp.task('clearcache', function () {
     return gulp.src(basePaths.cache, {read: false})
         .pipe(wait(500))
         .pipe(plugins.rimraf());
 });
+*/
+
+/*
 
 gulp.task('watch', ['sprite', 'css', 'prefixr', 'scripts'], function(){
     gulp.watch(appFiles.styles, ['css', 'prefixr', 'image', 'clearcache']).on('change', function(evt) {
@@ -214,6 +164,28 @@ gulp.task('watch', ['sprite', 'css', 'prefixr', 'scripts'], function(){
         changeEvent(evt);
     });
 */
+/* ---
+});
+*/
+
+
+gulp.task('watch', ['css'], function(){
+    gulp.watch(appFiles.styles, ['css']).on('change', function(evt) {
+        changeEvent(evt);
+    });
 });
 
+
+
 gulp.task('default', ['css', 'prefixr', 'scripts', 'image', 'clearcache']);
+
+
+
+
+
+
+
+/*
+ .pipe(plugins.browsersync.reload({stream:true, once:true})) 
+ 
+*/
